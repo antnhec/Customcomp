@@ -7,7 +7,7 @@
     <script>
       // Registering component
       AFRAME.registerComponent("blood", {
-        schema: {},
+        schema: {type:"string", default: "0-type"},
         init: function () {
           console.log("hello I am blood");
         }
