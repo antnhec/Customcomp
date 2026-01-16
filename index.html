@@ -3,18 +3,21 @@
   <head>
     <title>Red Box</title>
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
-    // Registering component in foo-component.js
-AFRAME.registerComponent("blood", {
-  schema: {},
-  init: function () {
-    console.log("hello I am blood")  
-  },
-  
+
+    <script>
+      // Registering component
+      AFRAME.registerComponent("blood", {
+        schema: {},
+        init: function () {
+          console.log("hello I am blood");
+        }
+      });
+    </script>
   </head>
+
   <body>
     <a-scene>
       <a-box blood color="red" position="0 1 -3"></a-box>
-
       <a-camera position="0 1.6 0"></a-camera>
     </a-scene>
   </body>
